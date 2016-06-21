@@ -1,0 +1,17 @@
+{
+  "name": "sebtest",
+  "version": "1.0.0",
+  "description": "Envoyeur de email, pour les alertes Montupet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sebastien ray",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "email-templates": "^2.3.0",
+    "mssql": "^3.1.2",
+    "nodemailer": "^2.3.0"
+  }
+}
