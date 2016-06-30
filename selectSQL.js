@@ -1,3 +1,5 @@
+'use strict';
+
 var sql = require('mssql');
 
 sql.connect("mssql://M4PROD:5D7TMNO41A@CLSESA57/M4PROD").then(function() {

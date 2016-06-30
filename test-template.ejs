@@ -1,0 +1,12 @@
+<div>
+    <p>Les salariés suivant termine bientôt leur période d'essai :</p>
+    <% if (ALERTS_HR.length) { %>
+    <ul>
+      <% ALERTS_HR.forEach(function(PERIOD){ %>
+        <li>
+          <p>La fin de période d'essai de "<%= PERIOD.STD_N_FAM_NAME_1.toUpperCase() %> <%= capitalize(PERIOD.STD_N_FIRST_NAME) %>" (<%= PERIOD.CFR_ID_HR %>) de l'unité de travail "<%= PERIOD.STD_N_WORK_UNIT %>" (<%= PERIOD.CFR_ID_WORK_UNIT %>) se termine le <%= formatDate(PERIOD.SFR_DT_END_TEST) %></p>
+        </li>
+      <% }) %>
+    </ul>
+    <% } %>
+</div>
